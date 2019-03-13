@@ -10,7 +10,7 @@ use function HexletBasics\Asserts\expectOutputString;
 $path = __DIR__ . '/index.php';
 require $path;
 
-Assert::that(isLannisterSoldier('blue', null))->false();
+
 Assert::that(isLannisterSoldier('red', 'man'))->false();
 Assert::that(isLannisterSoldier('red', 'lion'))->true();
 Assert::that(isLannisterSoldier('blue', 'lion'))->true();
